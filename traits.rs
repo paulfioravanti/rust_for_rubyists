@@ -1,12 +1,6 @@
-fn print_vec(v: &[int]) {
+fn print_vec<T: std::fmt::Show>(v: &[T]) {
   for i in v.iter() {
-    println!("{:d}", *i);
-  }
-}
-
-fn print_vec_str(v: &[&str]) {
-  for i in v.iter() {
-    println!("{:s}", *i);
+    println!("{}", i);
   }
 }
 
@@ -14,5 +8,5 @@ fn main() {
   let vec = [1i, 2i, 3i];
   print_vec(vec);
   let str_vec = ["hey", "there", "yo"];
-  print_vec_str(str_vec);
+  print_vec(str_vec);
 }
