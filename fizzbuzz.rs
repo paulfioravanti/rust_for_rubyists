@@ -23,43 +23,31 @@ fn main() {
 
 #[test]
 fn test_div_by_three() {
-  if div_by_three(1) {
-    fail!("One is not divisible by three");
-  }
+  assert!(!div_by_three(1), "One is not divisible by three")
 }
 
 #[test]
 fn test_div_by_three_with_three() {
-  if !div_by_three(3) {
-    fail!("Three should be divisible by three");
-  }
+  assert!(div_by_three(3), "Three should be divisible by three")
 }
 
 #[test]
 fn test_div_by_five() {
-  if div_by_five(1) {
-    fail!("One is not divisible by five");
-  }
+  assert!(!div_by_five(1), "One is not divisible by five")
 }
 
 #[test]
 fn test_div_by_five_with_five() {
-  if !div_by_five(5) {
-    fail!("Five should be divisible by five");
-  }
+  assert!(div_by_five(5), "Five should be divisible by five")
 }
 
 #[test]
 fn test_div_by_fifteen() {
-  if div_by_fifteen(1) {
-    fail!("One is not divisible by fifteen");
-  }
+  assert!(!div_by_fifteen(1), "One is not divisible by fifteen")
 }
 
 #[test]
 fn test_div_by_fifteen_with_fifteen() {
-  if !div_by_fifteen(15) {
-    fail!("Fifteen should be divisible by fifteen");
-  }
+  assert!(div_by_fifteen(15), "Fifteen should be divisible by fifteen")
 }
 
