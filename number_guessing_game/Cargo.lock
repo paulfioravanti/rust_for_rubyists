@@ -1,0 +1,4 @@
+[root]
+name = "number_guessing_game"
+version = "0.0.1"
+
